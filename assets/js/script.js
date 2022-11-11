@@ -78,10 +78,6 @@ elimina = (n) => {
 	};
 }
 
-
-
-
-
 clearForm = () => {
 	nome.value = '';
 	cognome.value = '';
