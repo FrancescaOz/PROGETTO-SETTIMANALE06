@@ -2,7 +2,6 @@ var nome;
 var cognome;
 var addBtn;
 var elencoHTML;
-var errore;
 var erroreElenco;
 var elenco = [];
 
@@ -13,7 +12,6 @@ function init() {
 	cognome = document.getElementById('cognome');
 	addBtn = document.getElementById('scrivi');
 	elencoHTML = document.getElementById('elenco');
-	errore = document.getElementById('errore');
 	erroreElenco = document.getElementById('erroreElenco');
 	printData();
 }
@@ -26,7 +24,6 @@ printData = () => {
 		.then((data) => {
 			elenco = data;
 			if (elenco.length > 0) {
-				errore.innerHTML = '';
 				elencoHTML.innerHTML = '';
 				elenco.map(function (element) {
 					elencoHTML.innerHTML += `<li class="list-unstyled"><button type="button" class="btn btn-outline-danger me-2" onClick="elimina(${element.id})"><i class="fa-solid fa-trash-can"></i></button><button type="button" class="btn btn-outline-primary m-2" onClick="modifica(${element.id})"><i class="fa-solid fa-pen-to-square"></i></button>${element.cognome} ${element.nome}</li>`;
