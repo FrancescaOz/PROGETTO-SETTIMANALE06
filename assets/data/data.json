@@ -26,19 +26,9 @@
       "id": 5
     },
     {
-      "nome": "Mannocchi",
-      "cognome": "Massimo",
-      "id": 6
-    },
-    {
-      "nome": "Pausini",
-      "cognome": "Laura",
-      "id": 7
-    },
-    {
       "nome": "Paola",
       "cognome": "Rossi",
-      "id": 8
+      "id": 7
     }
   ]
 }
