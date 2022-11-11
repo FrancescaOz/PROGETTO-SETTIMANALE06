@@ -32,16 +32,22 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center mb-5 h2. Bootstrap heading display-5">BENVENUTO NEL TUO REGISTRO ELETTRONICO</h1>
-                <form action="#" class="was-validated" id="form">
+                <form action="#" id="form">
                     <fieldset class="border border-dark p-4 text-cente d-flex align-items-baseline">
                         <!---nome--->
                         <label for="nome" class="form-label">NOME</label>
                         <input type="text" id="nome" class="form-control m-3 " placeholder="Inserisci nome" name="uname"
                             required>
+                            <div class="invalid-feedback">
+                                inerire nome
+                              </div>
                         <!---cognome--->
                         <label for="cognome" class="form-label">COGNOME</label>
                         <input type="text" id="cognome" class="form-control m-3" placeholder="Inserisci nome"
                             name="uname" required>
+                            <div class="invalid-feedback">
+                                inserire cognome
+                              </div>
                         <!---bottone--->
                         <button type="button" class="btn btn-outline-primary mt-3" id="scrivi"
                             onclick="controlla()">INVIA</button>
@@ -59,8 +65,7 @@
     </div>
 
 
-    <footer class="footer fixed-bottom">
-        <!-- Copyright -->
+    <footer>
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2022 Copyright:
             <a class="text-reset link-primary fw-bold" href="https://epicode.com/">Epicode School</a>
